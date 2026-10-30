@@ -1,15 +1,15 @@
-# Yazım talimatları
+# Humanizer kullanım politikası
 
-Bu projede Codex, bütün doğal dil yanıtlarını, açıklamalarını ve metin düzenleme işlemlerini hazırlamadan önce `.agents/skills/humanizer/SKILL.md` dosyasını okumalı ve içerdiği 26 yazım kuralından bağlama uygun olanları otomatik uygulamalıdır. Kullanıcının Humanizer becerisini ayrıca çağırması gerekmez.
+- Normal teknik sorularda, hata ayıklamada, Unity/C# kodlamada, algoritmalarda, kurulumda ve kod incelemesinde Humanizer'ı otomatik yükleme veya 26 kural üzerinden ayrıca değerlendirme yapma. Doğrudan, anlaşılır ve doğal yaz.
+- Sunum, hikâye, sinopsis, senaryo, makale, yaratıcı metin, açıklama yazısı ve belge hazırlarken veya düzenlerken `.agents/skills/humanizer/SKILL.md` dosyasının tamamını oku ve ilgili 26 kuralı uygula. Kuralları Türkçe ve İngilizce için dilin bağlamına uygun kullan.
+- Kullanıcı "humanize et", "daha doğal yaz", "Humanizer uygula" veya benzer bir istekte bulunursa görev türünden bağımsız olarak Humanizer'ı etkinleştir.
+- Kod yorumlarında, commit mesajlarında ve kısa teknik açıklamalarda varsayılan olarak Humanizer'ın tam inceleme sürecini çalıştırma; kullanıcı özellikle isterse uygula.
+- Metnin anlamını, teknik doğruluğunu, kaynaklarını ve sayısal bilgilerini koru. Kodu veya yapılandırma sözdizimini yalnızca üslup nedeniyle değiştirme.
+- Humanizer kullanılmadığında da gereksiz girişlerden, abartılı ifadelerden ve tekrarlardan kaçın.
+- Beceri gerekli değilse SKILL.md içeriğini okuma. Gereksiz ara taslaklar üretme; kullanıcı istemedikçe yalnızca son metni sun.
 
-Kuralları hem Türkçe hem İngilizce metinlere uygula. İngilizce örneklerin Türkçe karşılıklarını anlam ve kullanım açısından değerlendir; İngilizceye özgü dilbilgisi kurallarını Türkçeye mekanik biçimde aktarma. Beceri dosyasındaki bağlam, yazarın sesi ve istisna hükümlerini koru.
-
-Yanıtlar, açıklamalar, belgeler, yorumlar, commit mesajları ve diğer görevlerin içindeki doğal dil metinleri için becerinin embedded mode yaklaşımını kullan: kullanıcı özellikle istemedikçe ara taslakları ve kural analizini gösterme, yalnızca son metni sun.
-
-Yazım düzenlemeleri kodun işlevini, teknik sözdizimini veya doğrulanabilir bilgileri değiştirmemelidir. Kod bloklarını, satır içi kodu, komutları, tanımlayıcıları, dosya yollarını, URL hedeflerini, yapılandırma anahtarlarını ve veri biçimlerini koru. İsimleri, sayıları, tarihleri, alıntıları, kaynakları, iddiaları ve belirsizlik düzeyini koru; bilgi ekleme veya uydurma. Teknik doğruluk ile üslup tercihi çatışırsa teknik doğruluğu koru.
-
-`.agents/skills/humanizer/` altındaki üçüncü taraf beceri dosyalarını kısaltma, çevirme veya üslup amacıyla değiştirme. Özgün içerikleri ve lisans bildirimini koru.
+`.agents/skills/humanizer/` altındaki özgün beceri dosyalarını ve lisansı değiştirme veya silme.
 
 Beceri kaynağı: https://github.com/blader/humanizer
-Alınan sürüm: 3.1.0
+Sürüm: 3.1.0
 Kaynak commit: 0ef9fe5bc3572734fd3ae6c448fe00a30cd5dcf0
